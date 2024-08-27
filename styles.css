@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-secondary {
+    padding: 12px 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff6600;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+.about, .how-to-buy, .roadmap, .community {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about h2, .how-to-buy h2, .roadmap h2, .community h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about p, .community p {
+    font-size: 18px;
+    color: #666;
+}
+
+.how-to-buy ol {
+    font-size: 18px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding-left: 20px;
+}
+
+.roadmap ul {
+    font-size: 18px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
