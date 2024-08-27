@@ -15,6 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header-content {
@@ -27,6 +28,7 @@ header {
     height: 40px;
     border-radius: 50%;
     margin-right: 15px;
+    object-fit: cover;
 }
 
 header .logo h1 {
@@ -39,6 +41,7 @@ nav ul {
     list-style: none;
     display: flex;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -65,13 +68,13 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 10px;
     font-weight: 700;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
@@ -158,4 +161,90 @@ footer {
 footer p {
     margin: 0;
     font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablets and smaller laptops */
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icon img {
+        width: 35px;
+        height: 35px;
+    }
+
+    header .logo h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-buttons .btn-secondary {
+        font-size: 18px;
+    }
+
+    .about h2, .how-to-buy h2, .roadmap h2, .community h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile devices */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        display: none; /* Hide the navigation menu on mobile */
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .cta-buttons .btn-secondary {
+        font-size: 16px;
+    }
+
+    .about h2, .how-to-buy h2, .roadmap h2, .community h2 {
+        font-size: 24px;
+    }
+
+    .how-to-buy ol, .roadmap ul {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
